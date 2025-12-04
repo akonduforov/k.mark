@@ -1,4 +1,5 @@
 import { Check, Menu } from 'lucide-react';
+import { useState } from 'react';
 import { InterfaceMockup } from './components/InterfaceMockup';
 import { Calculator } from './components/Calculator';
 import { FAQ } from './components/FAQ';
@@ -8,6 +9,8 @@ import { ProductCategories } from './components/ProductCategories';
 import { Footer } from './components/Footer';
 
 function App() {
+  const [showTooltip, setShowTooltip] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#FFFFFF]">
       <header className="border-b border-gray-100">
@@ -128,9 +131,20 @@ function App() {
                 Когда коды и УПД заполняют вручную, любая опечатка превращается в штраф, возврат партии или сорванные сроки поставки.
               </p>
 
-              <p className="text-[22px] text-[#4193F7] leading-[1.6] font-light">
-                Пока коды вносят вручную, бизнес платит лишние 20–30 % и чаще всего исправляет ошибки людей, а не системы*
-              </p>
+              <div className="relative">
+                <p
+                  className="text-[22px] text-[#4193F7] leading-[1.6] font-light cursor-help"
+                  onMouseEnter={() => setShowTooltip(true)}
+                  onMouseLeave={() => setShowTooltip(false)}
+                >
+                  Пока коды вносят вручную, бизнес платит лишние 20–30 % и чаще всего исправляет ошибки людей, а не системы*
+                </p>
+                {showTooltip && (
+                  <div className="absolute left-0 top-full mt-2 w-full max-w-2xl bg-gray-900 text-white text-sm p-4 rounded-lg shadow-lg z-10">
+                    По данным исследования Metrobi по 500 складам (2024–2025 гг.), внедрение систем штрихкод-инвентаризации снижает операционные затраты на 20–30 % и сокращает ошибки, связанные с человеческим фактором, до 95 %.
+                  </div>
+                )}
+              </div>
 
               <div className="pt-2">
                 <button className="px-10 py-4 bg-[#4193F7] text-[#FFFFFF] text-[18px] font-normal rounded-full hover:bg-[#387FD8] transition-colors shadow-sm">

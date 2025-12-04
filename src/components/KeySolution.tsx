@@ -39,7 +39,7 @@ export function KeySolution() {
       <section className="max-w-[1440px] mx-auto px-12 py-24">
         <div className="mb-16 text-center">
           <h2 className="text-[56px] font-normal text-gray-900 leading-[1.15] tracking-tight mb-6">
-            Решите все задачи <span className="text-[#4193F7]">под ключ</span>
+            Как проходит внедрение сервиса
           </h2>
           <p className="text-[26px] text-gray-700 leading-relaxed font-light max-w-3xl mx-auto">
             От кода до отчёта — всё в одной системе, без остановки производства.

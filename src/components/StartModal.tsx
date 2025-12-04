@@ -15,6 +15,9 @@ export default function StartModal({ isOpen, onClose }: StartModalProps) {
   };
 
   const handleOptionClick = (option: 'demo' | 'call' | 'pay' | 'chat') => {
+    if (option === 'call') {
+      window.location.href = 'https://kontur.ru/markirovka/buy?from=header-main-page';
+    }
     console.log(option);
   };
 

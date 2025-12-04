@@ -151,7 +151,7 @@ export function SimpleWork() {
   ];
 
   return (
-    <section className="py-24 border-t border-gray-200">
+    <section id="simple-work" className="py-24 border-t border-gray-200">
       <div className="text-center mb-16 px-12">
         <h2 className="text-[56px] font-normal text-gray-900 leading-[1.15] tracking-tight mb-6">
           Работать с <span className="text-[#4193F7]">маркировкой</span> стало <span className="text-[#4193F7]">просто</span>

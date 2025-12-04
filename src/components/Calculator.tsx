@@ -42,7 +42,7 @@ export function Calculator() {
   const manualLoss = manualErrors * errorFixCost;
 
   return (
-    <section className="bg-[#F6F6F6] py-24">
+    <section id="calculator" className="bg-[#F6F6F6] py-24">
       <div className="max-w-[1440px] mx-auto px-12">
         <h2 className="text-[56px] font-normal text-gray-900 text-center leading-[1.15] tracking-tight mb-3">
           Посчитайте, во сколько обходятся ошибки вашим конкурентам

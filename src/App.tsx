@@ -31,7 +31,10 @@ function App() {
             <button className="text-gray-900 hover:text-gray-600 text-[18px] transition-colors">
               Войти
             </button>
-            <button className="px-8 py-4 text-[18px] font-normal text-[#4193F7] border-2 border-[#4193F7] rounded-full hover:bg-blue-50 transition-colors">
+            <button
+              onClick={() => window.location.href = 'https://kontur.ru/markirovka/buy?from=header-main-page'}
+              className="px-8 py-4 text-[18px] font-normal text-[#4193F7] border-2 border-[#4193F7] rounded-full hover:bg-blue-50 transition-colors"
+            >
               Заказать консультацию
             </button>
           </div>
@@ -68,10 +71,16 @@ function App() {
               </div>
 
               <div className="flex items-center gap-5 pt-6">
-                <button className="px-10 py-4 bg-[#4193F7] text-[#FFFFFF] text-[18px] font-normal rounded-full hover:bg-[#387FD8] transition-colors shadow-sm">
+                <button
+                  onClick={() => document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="px-10 py-4 bg-[#4193F7] text-[#FFFFFF] text-[18px] font-normal rounded-full hover:bg-[#387FD8] transition-colors shadow-sm"
+                >
                   Посчитать экономию
                 </button>
-                <button className="px-10 py-4 border-2 border-[#4193F7] text-[#4193F7] text-[18px] font-normal rounded-full hover:bg-blue-50 transition-colors">
+                <button
+                  onClick={() => window.location.href = 'https://kontur.ru/markirovka/test-drive'}
+                  className="px-10 py-4 border-2 border-[#4193F7] text-[#4193F7] text-[18px] font-normal rounded-full hover:bg-blue-50 transition-colors"
+                >
                   Посмотреть демо
                 </button>
               </div>
@@ -92,18 +101,24 @@ function App() {
             </div>
 
             <div className="grid grid-cols-2 gap-0">
-              <button className="flex items-center justify-center text-[#FFFFFF] text-[28px] font-normal leading-relaxed hover:bg-[#FFFFFF]/10 transition-all cursor-pointer border-r border-[#FFFFFF]/40 py-24">
+              <button
+                onClick={() => document.getElementById('problems')?.scrollIntoView({ behavior: 'smooth' })}
+                className="flex items-center justify-center text-[#FFFFFF] text-[28px] font-normal leading-relaxed hover:bg-[#FFFFFF]/10 transition-all cursor-pointer border-r border-[#FFFFFF]/40 py-24"
+              >
                 Запускаем, нужно подготовиться
               </button>
 
-              <button className="flex items-center justify-center text-[#FFFFFF] text-[28px] font-normal leading-relaxed hover:bg-[#FFFFFF]/10 transition-all cursor-pointer py-24">
+              <button
+                onClick={() => document.getElementById('simple-work')?.scrollIntoView({ behavior: 'smooth' })}
+                className="flex items-center justify-center text-[#FFFFFF] text-[28px] font-normal leading-relaxed hover:bg-[#FFFFFF]/10 transition-all cursor-pointer py-24"
+              >
                 Уже работаем, нужны улучшения
               </button>
             </div>
           </div>
         </section>
 
-        <section className="max-w-[1440px] mx-auto px-12 py-24">
+        <section id="problems" className="max-w-[1440px] mx-auto px-12 py-24">
           <div className="grid grid-cols-[55%_45%] gap-24 items-start">
             <div className="space-y-10">
               <h2 className="text-[56px] font-normal text-gray-900 leading-[1.15] tracking-tight">

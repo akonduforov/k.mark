@@ -174,6 +174,7 @@ function App() {
 
         <KeySolution />
 
+        {/* ВРЕМЕННО СКРЫТО: Окупаемость в первый месяц работы
         <section className="max-w-[1440px] mx-auto px-12 py-24">
           <h2 className="text-[56px] font-normal text-gray-900 text-center leading-[1.15] tracking-tight mb-16">
             Окупаемость в первый месяц работы
@@ -191,6 +192,7 @@ function App() {
             </div>
           </div>
         </section>
+        */}
 
         <SimpleWork />
 

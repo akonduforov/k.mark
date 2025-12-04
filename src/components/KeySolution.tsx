@@ -95,7 +95,7 @@ export function KeySolution() {
       <section className="bg-[#387FD8] py-8">
         <div className="max-w-[1440px] mx-auto px-12">
           <p className="text-[#FFFFFF] text-[26px] font-light text-center leading-relaxed">
-            За 3–5 дней получаете <span className="font-semibold">автоматизированную маркировку</span> — без простоев, ошибок и ручного труда.
+            За 3–5 дней настраиваем процесс маркировки так, чтобы сократить ручной труд и риски простоев и ошибок
           </p>
         </div>
       </section>

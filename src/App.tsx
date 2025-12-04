@@ -50,8 +50,7 @@ function App() {
                   Маркировка, которая работает <span className="text-[#4193F7]">вместо вас</span>
                 </h1>
                 <p className="text-[26px] text-gray-700 leading-relaxed font-light">
-                  Сервис <span className="text-[#4193F7]">автоматизирует учёт</span> и отчёты в <span className="text-[#4193F7]">Честном ЗНАКе</span>.<br />
-                  Меньше ручной работы, штрафов и ошибок.
+                  Сервис <span className="text-[#4193F7]">автоматизирует учёт</span> и отчёты в <span className="text-[#4193F7]">Честном ЗНАКе</span>. Меньше ручной работы, штрафов и ошибок.
                 </p>
               </div>
 

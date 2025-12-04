@@ -48,7 +48,7 @@ function App() {
                 </h1>
                 <p className="text-[26px] text-gray-700 leading-relaxed font-light">
                   Сервис <span className="text-[#4193F7]">автоматизирует учёт</span> и отчёты в <span className="text-[#4193F7]">Честном ЗНАКе</span>.<br />
-                  Без ручной работы, штрафов и ошибок.
+                  Меньше ручной работы, штрафов и ошибок.
                 </p>
               </div>
 

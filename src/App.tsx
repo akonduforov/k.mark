@@ -5,6 +5,7 @@ import { FAQ } from './components/FAQ';
 import { KeySolution } from './components/KeySolution';
 import { SimpleWork } from './components/SimpleWork';
 import { ProductCategories } from './components/ProductCategories';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -171,6 +172,8 @@ function App() {
 
         <FAQ />
       </main>
+
+      <Footer />
     </div>
   );
 }
